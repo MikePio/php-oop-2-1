@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/PetProduct.php';
 
-class Toy extends PetProduct{
+class Accessory extends PetProduct{
 
   public $material;
   public $size;
