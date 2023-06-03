@@ -14,7 +14,7 @@ $categories = [
   'bird' => new Category('Birds', 'fa-solid fa-fish'),
 ];
 
-var_dump($categories['dog']); 
+// var_dump($categories['dog']); 
 
 //* creo un array che contiene tutti i prodotti
 $products = [
@@ -24,16 +24,16 @@ $products = [
 $dogCrunchyBites = new Food('Crunchy Bites', 43.99, 'img/img1.jpg', $categories['dog'], '545g', ['Ham', 'Rice']),
 
 // Cibo per cani 2
-$dogSalmonPeas = new Food('Salmon and Peas', 44.99, 'img/img2.jpg', $categories['dog'], '600g', ['Salmon', 'Peas']),
+$dogSalmonPeas = new Food('Salmon and Peas', 44.99, 'img/img2.webp', $categories['dog'], '600g', ['Salmon', 'Peas']),
 
 // Cibo per gatti
-$catChicken = new Food('Chicken for cats', 44.99, 'img/img3.jpg', $categories['cat'], '400g', ['Chicken']),
+$catChicken = new Food('Chicken for cats', 44.99, 'img/img3.png', $categories['cat'], '400g', ['Chicken']),
 
 // Mangime per pesci
-$fishFeed = new Food('Fish feed', 2.95, 'img/img4.jpg', $categories['fish'], '30g', ['Cereals', 'Yeasts', 'Algae']),
+$fishFeed = new Food('Fish feed', 2.95, 'img/img4.png', $categories['fish'], '30g', ['Cereals', 'Yeasts', 'Algae']),
 
 // Voliera in legno
-$birdAviary = new Accessory('Bird aviary', 184.99, 'img/img5.jpg', $categories['bird'], 'Floats and bounces', '83 x 67x 153'),
+$birdAviary = new Accessory('Bird aviary', 184.99, 'img/img5.png', $categories['bird'], 'Floats and bounces', '83 x 67x 153'),
 
 // Kong classic
 $dogToy = new Toy('Kong classic, Dog toy', 13.49, 'img/img6.jpg', $categories['dog'], 'Soft with rope tail', '8,5 cm x 10 cm'),
@@ -66,7 +66,7 @@ $fishAquarius = new Accessory('Aquarius', 55.99, 'img/img8.jpg', $categories['fi
 // var_dump($fishAquarius);
 
 //* Stampo tutti gli oggetti (i prodotti)
-var_dump($products);
+// var_dump($products);
 
 
 ?>
