@@ -45,7 +45,9 @@ require_once __DIR__ . '/Database/db.php' ;
           <div class="card-body">
             <h5 class="card-title"><?php echo $product->getTitle() ?></h5>
             <p class="card-text mb-1">Category: <i class="<?php echo $product->getCategory()->icon ?>"></i> <?php echo $product->getCategory()->name ?></p>
-            <p class="card-text mb-1">Price: &euro; <?php echo $product->getPrice() ?></p>
+            <!-- <p class="card-text mb-1">Price: &euro; <?php // echo $product->getPrice() ?></p> -->
+            <!-- //* per ottenere il prezzo con le virgole -->
+            <p class="card-text mb-1">Price: &euro; <?php echo $product->getFormatPrice() ?></p>
             <?php if(get_class($product) == 'Food') : ?>
               <p class="card-text mb-1">Weight: <?php echo $product->weight ?></p>
               <p class="card-text mb-1">Ingredients: <?php echo implode(', ', $product->ingredients) ?></p>

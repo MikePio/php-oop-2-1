@@ -41,6 +41,10 @@ class PetProduct {
   public function getPrice(){
     return $this->price;
   }
+  //* per ottenere il prezzo con le virgole
+  public function getFormatPrice(){
+    return number_format($this->price, 2, ',', '.');
+  }
   public function getImage(){
     return $this->image;
   }

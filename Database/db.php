@@ -36,10 +36,10 @@ $fishFeed = new Food('Fish feed', 2.95, 'img/img4.png', $categories['fish'], '30
 $birdAviary = new Accessory('Bird aviary', 184.99, 'img/img5.png', $categories['bird'], 'Floats and bounces', '83 x 67x 153'),
 
 // Kong classic
-$dogToy = new Toy('Kong classic, Dog toy', 13.49, 'img/img6.jpg', $categories['dog'], 'Soft with rope tail', '8,5 cm x 10 cm'),
+$dogToy = new Toy('Kong classic, Dog toy', 13.49, 'img/img6.jpg', $categories['dog'], 'Floats and bounces', '8,5 cm x 10 cm'),
 
 // Topo di peluche
-$catPlushMouse = new Toy('Plush mouse, Cat toy', 4.99, 'img/img7.jpg', $categories['cat'], '545g', '8,5 cm x 10 cm'),
+$catPlushMouse = new Toy('Plush mouse, Cat toy', 4.99, 'img/img7.jpg', $categories['cat'], 'Soft with rope tail', '8,5 cm x 10 cm'),
 
 // Acquario
 $fishAquarius = new Accessory('Aquarius', 55.99, 'img/img8.jpg', $categories['fish'], 'Glass, Steel, Plastic', 'L23 cm x W10 cm x H27,5 cm'),
