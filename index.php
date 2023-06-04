@@ -47,7 +47,10 @@ require_once __DIR__ . '/Database/db.php' ;
             <p class="card-text mb-1">Category: <i class="<?php echo $product->getCategory()->icon ?>"></i> <?php echo $product->getCategory()->name ?></p>
             <!-- <p class="card-text mb-1">Price: &euro; <?php // echo $product->getPrice() ?></p> -->
             <!-- //* per ottenere il prezzo con le virgole -->
-            <p class="card-text mb-1">Price: &euro; <?php echo $product->getFormatPrice() ?></p>
+            <!-- <p class="card-text mb-1">Price: &euro; <?php // echo $product->getFormatPrice() ?></p> -->
+            <p class="card-text text-decoration-line-through mb-1">Original price: &euro; <?php echo $product->getFormatPrice() ?></p>
+            <!-- //* prezzo scontato                                                              percentuale   ↓           -->
+            <p class="card-text mb-1"><strong>Discounted price: &euro; <?php echo $product->getFormatDiscount(20) ?></strong> </p>
             <?php if(get_class($product) == 'Food') : ?>
               <p class="card-text mb-1">Weight: <?php echo $product->weight ?></p>
               <p class="card-text mb-1">Ingredients: <?php echo implode(', ', $product->ingredients) ?></p>

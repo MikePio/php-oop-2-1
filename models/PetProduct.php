@@ -45,6 +45,12 @@ class PetProduct {
   public function getFormatPrice(){
     return number_format($this->price, 2, ',', '.');
   }
+  public function getDiscount($_discount){
+    return $this->price *= (1 - $_discount/100);
+  }
+  public function getFormatDiscount($_discount){
+    return number_format($this->getDiscount($_discount), 2, ',', '.');
+  }
   public function getImage(){
     return $this->image;
   }
