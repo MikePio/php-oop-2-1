@@ -46,6 +46,18 @@ require_once __DIR__ . '/Database/db.php' ;
             <h5 class="card-title"><?php echo $product->getTitle() ?></h5>
             <p class="card-text mb-1">Category: <i class="<?php echo $product->getCategory()->icon ?>"></i> <?php echo $product->getCategory()->name ?></p>
             <p class="card-text mb-1">Price: &euro; <?php echo $product->getPrice() ?></p>
+            <?php if(get_class($product) == 'Food') : ?>
+              <p class="card-text mb-1">Weight: <?php echo $product->weight ?></p>
+              <p class="card-text mb-1">Ingredients: <?php echo implode(', ', $product->ingredients) ?></p>
+            <?php endif; ?>
+            <?php if(get_class($product) == 'Toy') : ?>
+              <p class="card-text mb-1">Features: <?php echo $product->features ?></p>
+              <p class="card-text mb-1">Size: <?php echo $product->size ?></p>
+            <?php endif; ?>
+            <?php if(get_class($product) == 'Accessory') : ?>
+              <p class="card-text mb-1">Material: <?php echo $product->material ?></p>
+              <p class="card-text mb-1">Size: <?php echo $product->size ?></p>
+            <?php endif; ?>
           </div>
         </div>
       </div>
