@@ -20,7 +20,8 @@ require_once __DIR__ . '/Database/db.php' ;
   <title>Pet Shop</title>
   <style>
     body {
-      background-color: #303030;
+      /* background-color: #303030; */
+      background-color: #212529;
       color: #0282f9;
       font-family: Arial, Helvetica, sans-serif;
     }
@@ -34,6 +35,10 @@ require_once __DIR__ . '/Database/db.php' ;
 </header>
 
 <main>
+
+  <div class="text-white py-0 px-5">
+  <h2 class="px-5 ms-5">Our products</h2>
+  </div>
 
   <div class="container d-flex flex-wrap align-items-start my-5">
     
