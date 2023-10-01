@@ -27,10 +27,10 @@ $dogCrunchyBites = new Food('Crunchy Bites', 43.99, 'img/img1.jpg', $categories[
 $dogSalmonPeas = new Food('Salmon and Peas', 44.99, 'img/img2.webp', $categories['dog'], '600g', ['Salmon', 'Peas']),
 
 // Cibo per gatti
-$catChicken = new Food('Chicken for cats', 44.99, 'img/img3.png', $categories['cat'], '400g', ['Chicken']),
+$catChicken = new Food('Chicken for cats', 44.99, 'img/img3.jpg', $categories['cat'], '400g', ['Chicken']),
 
 // Mangime per pesci
-$fishFeed = new Food('Fish feed', 2.95, 'img/img4.png', $categories['fish'], '30g', ['Cereals', 'Yeasts', 'Algae']),
+$fishFeed = new Food('Fish feed', 2.95, 'img/img4.jpg', $categories['fish'], '30g', ['Cereals', 'Yeasts', 'Algae']),
 
 // Voliera in legno
 $birdAviary = new Accessory('Bird aviary', 184.99, 'img/img5.png', $categories['bird'], 'Floats and bounces', '83 x 67x 153'),

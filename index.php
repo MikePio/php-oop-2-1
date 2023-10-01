@@ -23,21 +23,22 @@ require_once __DIR__ . '/Database/db.php' ;
       /* background-color: #303030; */
       background-color: #212529;
       color: #0282f9;
-      font-family: Arial, Helvetica, sans-serif;
+      /* font-family: Arial, Helvetica, sans-serif; */
     }
   </style>
 </head>
 
 <body>
 
-<header class="bg-dark text-white py-5 px-5">
-  <h1 class="px-5 ms-5">Pet Shop</h1>
+<!-- <header class="bg-dark text-white py-5 px-5"> -->
+<header class="bg-dark text-white text-start p-5"  style="background-color: rgba(0, 0, 0, 0.2) !important;">
+  <h1>Pet Shop</h1>
 </header>
 
 <main>
 
   <div class="text-white py-0 px-5">
-  <h2 class="px-5 ms-5">Our products</h2>
+  <h2 class="ms-4 pt-5 ps-5">Our products</h2>
   </div>
 
   <div class="container d-flex flex-wrap align-items-start my-5">
@@ -48,7 +49,7 @@ require_once __DIR__ . '/Database/db.php' ;
         <div class="card" style="min-height: 575px;">
           <img src="<?php echo $product->getImage() ?>" class="card-img-top" alt="<?php echo $product->getTitle() ?>" style="height: 405px;">
           <div class="card-body">
-            <h5 class="card-title"><?php echo $product->getTitle() ?></h5>
+            <h5 class="card-title"><strong><?php echo $product->getTitle() ?></strong></h5>
             <p class="card-text mb-1">Category: <i class="<?php echo $product->getCategory()->icon ?>"></i> <?php echo $product->getCategory()->name ?></p>
             <!-- <p class="card-text mb-1">Price: &euro; <?php // echo $product->getPrice() ?></p> -->
             <!-- //* per ottenere il prezzo con le virgole -->
@@ -75,6 +76,44 @@ require_once __DIR__ . '/Database/db.php' ;
   </div>
     
 </main>
+
+<footer class="bg-dark text-center text-white">
+
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+
+  <!-- 
+    <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+    <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+    <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-google"></i></a> 
+  -->
+    
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1 rounded-circle"
+              href="https://www.instagram.com/michelepiopilla/" role="button"><i class="fab fa-instagram"></i></a>
+
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="https://www.linkedin.com/in/michele-pilla/" role="button"><i
+                  class="fab fa-linkedin-in"></i></a>
+
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="https://github.com/MikePio"
+              role="button"><i class="fab fa-github"></i></a>
+
+      </section>
+      <!-- Section: Social media -->
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 By
+      <a class="text-white" href="https://github.com/MikePio">@MikePio</a>
+  </div>
+
+</footer>
 
 </body>
 
